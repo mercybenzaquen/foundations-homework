@@ -1,2 +1,2 @@
 # Foundations-homework
-Repository for homefork for foundations
+Repository for homework for foundations
