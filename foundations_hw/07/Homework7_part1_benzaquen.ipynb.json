@@ -1,0 +1,1056 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "/Users/mercybenzaquen/.virtualenvs/Homework7/lib/python3.5/site-packages/matplotlib/__init__.py:1035: UserWarning: Duplicate key in file \"/Users/mercybenzaquen/.matplotlib/matplotlibrc\", line #2\n",
+      "  (fname, cnt))\n"
+     ]
+    }
+   ],
+   "source": [
+    "import pandas as pd"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [],
+   "source": [
+    "df = pd.read_csv(\"07-hw-animals.csv\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Requirement already satisfied (use --upgrade to upgrade): matplotlib in /Users/mercybenzaquen/.virtualenvs/Homework7/lib/python3.5/site-packages\r\n",
+      "Requirement already satisfied (use --upgrade to upgrade): python-dateutil in /Users/mercybenzaquen/.virtualenvs/Homework7/lib/python3.5/site-packages (from matplotlib)\r\n",
+      "Requirement already satisfied (use --upgrade to upgrade): pyparsing!=2.0.0,!=2.0.4,>=1.5.6 in /Users/mercybenzaquen/.virtualenvs/Homework7/lib/python3.5/site-packages (from matplotlib)\r\n",
+      "Requirement already satisfied (use --upgrade to upgrade): pytz in /Users/mercybenzaquen/.virtualenvs/Homework7/lib/python3.5/site-packages (from matplotlib)\r\n",
+      "Requirement already satisfied (use --upgrade to upgrade): cycler in /Users/mercybenzaquen/.virtualenvs/Homework7/lib/python3.5/site-packages (from matplotlib)\r\n",
+      "Requirement already satisfied (use --upgrade to upgrade): numpy>=1.6 in /Users/mercybenzaquen/.virtualenvs/Homework7/lib/python3.5/site-packages (from matplotlib)\r\n",
+      "Requirement already satisfied (use --upgrade to upgrade): six>=1.5 in /Users/mercybenzaquen/.virtualenvs/Homework7/lib/python3.5/site-packages (from python-dateutil->matplotlib)\r\n"
+     ]
+    }
+   ],
+   "source": [
+    "!pip install matplotlib"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [],
+   "source": [
+    "%matplotlib inline"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>animal</th>\n",
+       "      <th>name</th>\n",
+       "      <th>length</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>cat</td>\n",
+       "      <td>Anne</td>\n",
+       "      <td>35</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>cat</td>\n",
+       "      <td>Bob</td>\n",
+       "      <td>45</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>dog</td>\n",
+       "      <td>Egglesburg</td>\n",
+       "      <td>65</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>dog</td>\n",
+       "      <td>Devon</td>\n",
+       "      <td>50</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>4</th>\n",
+       "      <td>cat</td>\n",
+       "      <td>Charlie</td>\n",
+       "      <td>32</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>5</th>\n",
+       "      <td>dog</td>\n",
+       "      <td>Fontaine</td>\n",
+       "      <td>35</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "  animal        name  length\n",
+       "0    cat        Anne      35\n",
+       "1    cat         Bob      45\n",
+       "2    dog  Egglesburg      65\n",
+       "3    dog       Devon      50\n",
+       "4    cat     Charlie      32\n",
+       "5    dog    Fontaine      35"
+      ]
+     },
+     "execution_count": 10,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Display the names of the columns in the csv"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "Index(['animal', 'name', 'length'], dtype='object')"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df.columns"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array(['animal', 'name', 'length'], dtype=object)"
+      ]
+     },
+     "execution_count": 12,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df.columns.values"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Display the first 3 animals"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>name</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>Anne</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>Bob</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>Egglesburg</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "         name\n",
+       "0        Anne\n",
+       "1         Bob\n",
+       "2  Egglesburg"
+      ]
+     },
+     "execution_count": 13,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df[['name']].head(3)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Sort the animals to see the 3 longest animals."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>animal</th>\n",
+       "      <th>name</th>\n",
+       "      <th>length</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>dog</td>\n",
+       "      <td>Egglesburg</td>\n",
+       "      <td>65</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>dog</td>\n",
+       "      <td>Devon</td>\n",
+       "      <td>50</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>cat</td>\n",
+       "      <td>Bob</td>\n",
+       "      <td>45</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "  animal        name  length\n",
+       "2    dog  Egglesburg      65\n",
+       "3    dog       Devon      50\n",
+       "1    cat         Bob      45"
+      ]
+     },
+     "execution_count": 14,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df.sort_values('length', ascending=False).head(3)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# What are the counts of the different values of the \"animal\" column? a.k.a. how many cats and how many dogs."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "cat    3\n",
+       "dog    3\n",
+       "Name: animal, dtype: int64"
+      ]
+     },
+     "execution_count": 15,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df['animal'].value_counts()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Only select the dogs."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>animal</th>\n",
+       "      <th>name</th>\n",
+       "      <th>length</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>dog</td>\n",
+       "      <td>Egglesburg</td>\n",
+       "      <td>65</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>dog</td>\n",
+       "      <td>Devon</td>\n",
+       "      <td>50</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>5</th>\n",
+       "      <td>dog</td>\n",
+       "      <td>Fontaine</td>\n",
+       "      <td>35</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "  animal        name  length\n",
+       "2    dog  Egglesburg      65\n",
+       "3    dog       Devon      50\n",
+       "5    dog    Fontaine      35"
+      ]
+     },
+     "execution_count": 16,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df[df['animal'] == 'dog']"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Display all of the animals that are greater than 40 cm."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>animal</th>\n",
+       "      <th>name</th>\n",
+       "      <th>length</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>cat</td>\n",
+       "      <td>Bob</td>\n",
+       "      <td>45</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>dog</td>\n",
+       "      <td>Egglesburg</td>\n",
+       "      <td>65</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>dog</td>\n",
+       "      <td>Devon</td>\n",
+       "      <td>50</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "  animal        name  length\n",
+       "1    cat         Bob      45\n",
+       "2    dog  Egglesburg      65\n",
+       "3    dog       Devon      50"
+      ]
+     },
+     "execution_count": 17,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df[df['length'] > 40]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# 'length' is the animal's length in cm. Create a new column called inches that is the length in inches."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>animal</th>\n",
+       "      <th>name</th>\n",
+       "      <th>length</th>\n",
+       "      <th>inches</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>cat</td>\n",
+       "      <td>Anne</td>\n",
+       "      <td>35</td>\n",
+       "      <td>13.65</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>cat</td>\n",
+       "      <td>Bob</td>\n",
+       "      <td>45</td>\n",
+       "      <td>17.55</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>dog</td>\n",
+       "      <td>Egglesburg</td>\n",
+       "      <td>65</td>\n",
+       "      <td>25.35</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>dog</td>\n",
+       "      <td>Devon</td>\n",
+       "      <td>50</td>\n",
+       "      <td>19.50</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>4</th>\n",
+       "      <td>cat</td>\n",
+       "      <td>Charlie</td>\n",
+       "      <td>32</td>\n",
+       "      <td>12.48</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "  animal        name  length  inches\n",
+       "0    cat        Anne      35   13.65\n",
+       "1    cat         Bob      45   17.55\n",
+       "2    dog  Egglesburg      65   25.35\n",
+       "3    dog       Devon      50   19.50\n",
+       "4    cat     Charlie      32   12.48"
+      ]
+     },
+     "execution_count": 18,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df['inches'] = df['length'] * 0.39\n",
+    "df.head()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Save the cats to a separate variable called \"cats.\" Save the dogs to a separate variable called \"dogs.\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [],
+   "source": [
+    "cats = df['animal'] == 'cat'\n",
+    "#print(cats)\n",
+    "dogs = df['animal'] == 'dog'\n",
+    "#print(dogs)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Display all of the animals that are cats and above 12 inches long. First do it using the \"cats\" variable, then do it using your normal dataframe."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>animal</th>\n",
+       "      <th>name</th>\n",
+       "      <th>length</th>\n",
+       "      <th>inches</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>cat</td>\n",
+       "      <td>Anne</td>\n",
+       "      <td>35</td>\n",
+       "      <td>13.65</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>cat</td>\n",
+       "      <td>Bob</td>\n",
+       "      <td>45</td>\n",
+       "      <td>17.55</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>4</th>\n",
+       "      <td>cat</td>\n",
+       "      <td>Charlie</td>\n",
+       "      <td>32</td>\n",
+       "      <td>12.48</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "  animal     name  length  inches\n",
+       "0    cat     Anne      35   13.65\n",
+       "1    cat      Bob      45   17.55\n",
+       "4    cat  Charlie      32   12.48"
+      ]
+     },
+     "execution_count": 20,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "cats_above_12_inches = df['inches'] >12\n",
+    "cats = df['animal'] == 'cat'\n",
+    "df[cats & cats_above_12_inches]\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>animal</th>\n",
+       "      <th>name</th>\n",
+       "      <th>length</th>\n",
+       "      <th>inches</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>cat</td>\n",
+       "      <td>Anne</td>\n",
+       "      <td>35</td>\n",
+       "      <td>13.65</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>cat</td>\n",
+       "      <td>Bob</td>\n",
+       "      <td>45</td>\n",
+       "      <td>17.55</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>4</th>\n",
+       "      <td>cat</td>\n",
+       "      <td>Charlie</td>\n",
+       "      <td>32</td>\n",
+       "      <td>12.48</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "  animal     name  length  inches\n",
+       "0    cat     Anne      35   13.65\n",
+       "1    cat      Bob      45   17.55\n",
+       "4    cat  Charlie      32   12.48"
+      ]
+     },
+     "execution_count": 21,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df[(df['animal'] == 'cat') & (df['inches'] > 12)]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# What's the mean length of a cat?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "count     3.000000\n",
+       "mean     37.333333\n",
+       "std       6.806859\n",
+       "min      32.000000\n",
+       "25%      33.500000\n",
+       "50%      35.000000\n",
+       "75%      40.000000\n",
+       "max      45.000000\n",
+       "Name: length, dtype: float64"
+      ]
+     },
+     "execution_count": 22,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#df['length'].describe()\n",
+    "\n",
+    "cats= df[df['animal'] == 'cat']\n",
+    "cats[\"length\"].describe()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# What's the mean length of a dog?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "count     3.0\n",
+       "mean     50.0\n",
+       "std      15.0\n",
+       "min      35.0\n",
+       "25%      42.5\n",
+       "50%      50.0\n",
+       "75%      57.5\n",
+       "max      65.0\n",
+       "Name: length, dtype: float64"
+      ]
+     },
+     "execution_count": 23,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "dogs= df[df['animal'] == 'dog']\n",
+    "dogs[\"length\"].describe()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Use groupby to accomplish both of the above tasks at once.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "animal       \n",
+       "cat     count     3.000000\n",
+       "        mean     37.333333\n",
+       "        std       6.806859\n",
+       "        min      32.000000\n",
+       "        25%      33.500000\n",
+       "        50%      35.000000\n",
+       "        75%      40.000000\n",
+       "        max      45.000000\n",
+       "dog     count     3.000000\n",
+       "        mean     50.000000\n",
+       "        std      15.000000\n",
+       "        min      35.000000\n",
+       "        25%      42.500000\n",
+       "        50%      50.000000\n",
+       "        75%      57.500000\n",
+       "        max      65.000000\n",
+       "Name: length, dtype: float64"
+      ]
+     },
+     "execution_count": 24,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df.groupby('animal')['length'].describe()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "collapsed": true
+   },
+   "source": [
+    "# Make a histogram of the length of dogs. I apologize that it is so boring.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "<matplotlib.axes._subplots.AxesSubplot at 0x10fa3dd68>"
+      ]
+     },
+     "execution_count": 31,
+     "metadata": {},
+     "output_type": "execute_result"
+    },
+    {
+     "data": {
+      "image/png": "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\nRK5CYII=\n",
+      "text/plain": [
+       "<matplotlib.figure.Figure at 0x10fa02400>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "dogs[\"length\"].hist()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Change your graphing style to be something else (anything else!)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "<matplotlib.axes._subplots.AxesSubplot at 0x10fdb4198>"
+      ]
+     },
+     "execution_count": 38,
+     "metadata": {},
+     "output_type": "execute_result"
+    },
+    {
+     "data": {
+      "image/png": "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\n",
+      "text/plain": [
+       "<matplotlib.figure.Figure at 0x10fdc1470>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "dogs[\"length\"].plot(kind='pie', y=dogs['length'],labels=dogs['name'], legend=False)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Make a horizontal bar graph of the length of the animals, with their name as the label (look at the billionaires notebook I put on Slack!)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "<matplotlib.axes._subplots.AxesSubplot at 0x11000c9b0>"
+      ]
+     },
+     "execution_count": 46,
+     "metadata": {},
+     "output_type": "execute_result"
+    },
+    {
+     "data": {
+      "image/png": "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\n",
+      "text/plain": [
+       "<matplotlib.figure.Figure at 0x1101840b8>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "df.plot(kind='barh', x='name', y='length', legend=False)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Make a sorted horizontal bar graph of the cats, with the larger cats on top."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 56,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "  animal     name  length  inches\n",
+      "4    cat  Charlie      32   12.48\n",
+      "0    cat     Anne      35   13.65\n",
+      "1    cat      Bob      45   17.55\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "<matplotlib.axes._subplots.AxesSubplot at 0x1108c1940>"
+      ]
+     },
+     "execution_count": 56,
+     "metadata": {},
+     "output_type": "execute_result"
+    },
+    {
+     "data": {
+      "image/png": "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\nrkJggg==\n",
+      "text/plain": [
+       "<matplotlib.figure.Figure at 0x110996a20>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "cats_ordered= cats.sort_values(by='length', ascending=True)\n",
+    "print(cats_ordered)\n",
+    "cats_ordered.plot(kind='barh', x='name', y='length', legend=False)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.5.1"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 0
+}
