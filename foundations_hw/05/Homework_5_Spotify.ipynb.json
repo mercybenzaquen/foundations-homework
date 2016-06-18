@@ -2,7 +2,7 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": 3,
+   "execution_count": 4,
    "metadata": {
     "collapsed": false
    },
@@ -11,7 +11,10 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "Requirement already satisfied (use --upgrade to upgrade): requests in /Users/mercybenzaquen/.virtualenvs/Homework5/lib/python3.5/site-packages\r\n"
+      "Collecting requests\n",
+      "  Using cached requests-2.10.0-py2.py3-none-any.whl\n",
+      "Installing collected packages: requests\n",
+      "Successfully installed requests-2.10.0\n"
      ]
     }
    ],
@@ -21,7 +24,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 4,
+   "execution_count": 5,
    "metadata": {
     "collapsed": false
    },
@@ -43,7 +46,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 5,
+   "execution_count": 6,
    "metadata": {
     "collapsed": false
    },
@@ -62,7 +65,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 6,
+   "execution_count": 7,
    "metadata": {
     "collapsed": false
    },
@@ -71,7 +74,7 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "dict_keys(['limit', 'items', 'href', 'next', 'offset', 'total', 'previous'])\n"
+      "dict_keys(['href', 'items', 'limit', 'next', 'offset', 'total', 'previous'])\n"
      ]
     }
    ],
@@ -81,7 +84,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 7,
+   "execution_count": 8,
    "metadata": {
     "collapsed": true
    },
@@ -92,7 +95,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 8,
+   "execution_count": 9,
    "metadata": {
     "collapsed": false
    },
@@ -111,7 +114,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 9,
+   "execution_count": 10,
    "metadata": {
     "collapsed": false
    },
@@ -120,7 +123,7 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "{'type': 'artist', 'id': '6icQOAFXDZKsumw3YXyusw', 'uri': 'spotify:artist:6icQOAFXDZKsumw3YXyusw', 'href': 'https://api.spotify.com/v1/artists/6icQOAFXDZKsumw3YXyusw', 'genres': [], 'name': 'Lil Yachty', 'external_urls': {'spotify': 'https://open.spotify.com/artist/6icQOAFXDZKsumw3YXyusw'}, 'followers': {'total': 39006, 'href': None}, 'popularity': 72, 'images': [{'url': 'https://i.scdn.co/image/add25baa69fc7bfd9cfd5d87716941028c2d6736', 'width': 640, 'height': 640}, {'url': 'https://i.scdn.co/image/3f8205117bdd028a648ad3fc925f9fb46dfa26fa', 'width': 300, 'height': 300}, {'url': 'https://i.scdn.co/image/ccc54e2911dbc5463acb401ee61489e27d991408', 'width': 64, 'height': 64}]}\n"
+      "{'type': 'artist', 'id': '6icQOAFXDZKsumw3YXyusw', 'href': 'https://api.spotify.com/v1/artists/6icQOAFXDZKsumw3YXyusw', 'genres': [], 'popularity': 72, 'uri': 'spotify:artist:6icQOAFXDZKsumw3YXyusw', 'followers': {'href': None, 'total': 39654}, 'images': [{'url': 'https://i.scdn.co/image/add25baa69fc7bfd9cfd5d87716941028c2d6736', 'height': 640, 'width': 640}, {'url': 'https://i.scdn.co/image/3f8205117bdd028a648ad3fc925f9fb46dfa26fa', 'height': 300, 'width': 300}, {'url': 'https://i.scdn.co/image/ccc54e2911dbc5463acb401ee61489e27d991408', 'height': 64, 'width': 64}], 'name': 'Lil Yachty', 'external_urls': {'spotify': 'https://open.spotify.com/artist/6icQOAFXDZKsumw3YXyusw'}}\n"
      ]
     }
    ],
@@ -137,7 +140,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 10,
+   "execution_count": 11,
    "metadata": {
     "collapsed": false
    },
@@ -185,21 +188,21 @@
       "Lil Cuete 40 Genre: chicano rap\n",
       "Lil Phat 39 Genre: \n",
       "No genres listed\n",
+      "Lil Boom 39 Genre: \n",
+      "No genres listed\n",
       "Lil Debbie 43 Genre: \n",
       "No genres listed\n",
       "Lil Twist 39 Genre: jerk\n",
       "Lil Trill 37 Genre: deep trap\n",
-      "Lil Boom 39 Genre: \n",
-      "No genres listed\n",
-      "Lil Twon 37 Genre: \n",
-      "No genres listed\n",
       "Lil AJ 37 Genre: \n",
       "No genres listed\n",
       "Lil Lonnie 37 Genre: \n",
       "No genres listed\n",
-      "Lil Goofy 35 Genre: \n",
+      "Lil Twon 37 Genre: \n",
       "No genres listed\n",
       "Lil Haiti 36 Genre: \n",
+      "No genres listed\n",
+      "Lil Goofy 35 Genre: \n",
       "No genres listed\n",
       "Mr. Lil One 36 Genre: chicano rap\n",
       "Lil Cray 35 Genre: \n",
@@ -208,13 +211,13 @@
       "No genres listed\n",
       "Lil Silva 43 Genre: \n",
       "No genres listed\n",
-      "Lil Kesh 39 Genre: \n",
+      "Lil Yase 34 Genre: \n",
       "No genres listed\n",
       "Lil Rue 34 Genre: \n",
       "No genres listed\n",
-      "Lil Yase 34 Genre: \n",
-      "No genres listed\n",
       "Lil Eddie 41 Genre: \n",
+      "No genres listed\n",
+      "Lil Kesh 39 Genre: \n",
       "No genres listed\n",
       "Lil Wayne, DJ Drama 35 Genre: \n",
       "No genres listed\n",
@@ -252,7 +255,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 13,
+   "execution_count": 12,
    "metadata": {
     "collapsed": false
    },
@@ -262,19 +265,19 @@
      "output_type": "stream",
      "text": [
       "['crunk', 'dirty south rap', 'soca', 'freestyle', 'chicano rap', 'deep trap', 'jerk', 'chicano rap', 'hip pop', 'hip pop', 'juggalo', 'crunk', 'dirty south rap', 'southern hip hop', 'trap music', 'hip pop', 'pop rap', 'chicano rap', 'latin hip hop', 'crunk', 'dirty south rap', 'southern hip hop', 'dirty south rap', 'pop rap', 'southern hip hop', 'trap music']\n",
-      "freestyle 1\n",
-      "pop rap 2\n",
       "jerk 1\n",
       "deep trap 1\n",
+      "trap music 2\n",
       "juggalo 1\n",
-      "dirty south rap 4\n",
-      "chicano rap 3\n",
-      "hip pop 3\n",
-      "soca 1\n",
-      "southern hip hop 3\n",
       "latin hip hop 1\n",
+      "hip pop 3\n",
+      "pop rap 2\n",
+      "chicano rap 3\n",
+      "southern hip hop 3\n",
       "crunk 3\n",
-      "trap music 2\n"
+      "dirty south rap 4\n",
+      "soca 1\n",
+      "freestyle 1\n"
      ]
     }
    ],
@@ -299,11 +302,23 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 54,
+   "execution_count": 13,
    "metadata": {
     "collapsed": false
    },
-   "outputs": [],
+   "outputs": [
+    {
+     "ename": "NameError",
+     "evalue": "name 'all_genres' is not defined",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-13-c10463f0e267>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      6\u001b[0m \u001b[0mgenre_counter\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      7\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 8\u001b[0;31m \u001b[0mcounts\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mCounter\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mall_genres\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      9\u001b[0m \u001b[0mcounts\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mmost_common\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;31mNameError\u001b[0m: name 'all_genres' is not defined"
+     ]
+    }
+   ],
    "source": [
     "#this is the other option I did it with soma's help\n",
     "from collections import Counter\n",
@@ -318,29 +333,18 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 15,
+   "execution_count": null,
    "metadata": {
     "collapsed": false
    },
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "[('dirty south rap', 4), ('chicano rap', 3), ('hip pop', 3)]"
-      ]
-     },
-     "execution_count": 15,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
+   "outputs": [],
    "source": [
     "genre_counter.most_common(3)"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 16,
+   "execution_count": null,
    "metadata": {
     "collapsed": true
    },
@@ -412,11 +416,11 @@
       "All genres we have ['dirty south rap', 'pop rap', 'southern hip hop', 'trap music', 'crunk', 'dirty south rap', 'southern hip hop', 'chicano rap', 'latin hip hop', 'hip pop', 'pop rap', 'crunk', 'dirty south rap', 'southern hip hop', 'trap music', 'juggalo', 'hip pop', 'hip pop', 'chicano rap']\n",
       "Current artist has []\n",
       "All genres we have ['dirty south rap', 'pop rap', 'southern hip hop', 'trap music', 'crunk', 'dirty south rap', 'southern hip hop', 'chicano rap', 'latin hip hop', 'hip pop', 'pop rap', 'crunk', 'dirty south rap', 'southern hip hop', 'trap music', 'juggalo', 'hip pop', 'hip pop', 'chicano rap']\n",
+      "Current artist has []\n",
+      "All genres we have ['dirty south rap', 'pop rap', 'southern hip hop', 'trap music', 'crunk', 'dirty south rap', 'southern hip hop', 'chicano rap', 'latin hip hop', 'hip pop', 'pop rap', 'crunk', 'dirty south rap', 'southern hip hop', 'trap music', 'juggalo', 'hip pop', 'hip pop', 'chicano rap']\n",
       "Current artist has ['jerk']\n",
       "All genres we have ['dirty south rap', 'pop rap', 'southern hip hop', 'trap music', 'crunk', 'dirty south rap', 'southern hip hop', 'chicano rap', 'latin hip hop', 'hip pop', 'pop rap', 'crunk', 'dirty south rap', 'southern hip hop', 'trap music', 'juggalo', 'hip pop', 'hip pop', 'chicano rap', 'jerk']\n",
       "Current artist has ['deep trap']\n",
-      "All genres we have ['dirty south rap', 'pop rap', 'southern hip hop', 'trap music', 'crunk', 'dirty south rap', 'southern hip hop', 'chicano rap', 'latin hip hop', 'hip pop', 'pop rap', 'crunk', 'dirty south rap', 'southern hip hop', 'trap music', 'juggalo', 'hip pop', 'hip pop', 'chicano rap', 'jerk', 'deep trap']\n",
-      "Current artist has []\n",
       "All genres we have ['dirty south rap', 'pop rap', 'southern hip hop', 'trap music', 'crunk', 'dirty south rap', 'southern hip hop', 'chicano rap', 'latin hip hop', 'hip pop', 'pop rap', 'crunk', 'dirty south rap', 'southern hip hop', 'trap music', 'juggalo', 'hip pop', 'hip pop', 'chicano rap', 'jerk', 'deep trap']\n",
       "Current artist has []\n",
       "All genres we have ['dirty south rap', 'pop rap', 'southern hip hop', 'trap music', 'crunk', 'dirty south rap', 'southern hip hop', 'chicano rap', 'latin hip hop', 'hip pop', 'pop rap', 'crunk', 'dirty south rap', 'southern hip hop', 'trap music', 'juggalo', 'hip pop', 'hip pop', 'chicano rap', 'jerk', 'deep trap']\n",
@@ -506,19 +510,19 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "freestyle shows up 1 times\n",
-      "pop rap shows up 2 times\n",
       "jerk shows up 1 times\n",
       "deep trap shows up 1 times\n",
+      "trap music shows up 2 times\n",
       "juggalo shows up 1 times\n",
-      "dirty south rap shows up 4 times\n",
-      "chicano rap shows up 3 times\n",
-      "hip pop shows up 3 times\n",
-      "soca shows up 1 times\n",
-      "southern hip hop shows up 3 times\n",
       "latin hip hop shows up 1 times\n",
+      "hip pop shows up 3 times\n",
+      "pop rap shows up 2 times\n",
+      "chicano rap shows up 3 times\n",
+      "southern hip hop shows up 3 times\n",
       "crunk shows up 3 times\n",
-      "trap music shows up 2 times\n"
+      "dirty south rap shows up 4 times\n",
+      "soca shows up 1 times\n",
+      "freestyle shows up 1 times\n"
      ]
     }
    ],
@@ -578,7 +582,7 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "Our artist with the most followers is not the most popular, it is Lil' Flip with  19931 followers\n"
+      "Our artist with the most followers is not the most popular, it is Lil' Flip with  19960 followers\n"
      ]
     }
    ],
@@ -682,23 +686,23 @@
       "Looking at Lil' Kim who has a popularity of 62\n",
       "Looking at Lil Cuete who has a popularity of 40\n",
       "Looking at Lil Phat who has a popularity of 39\n",
+      "Looking at Lil Boom who has a popularity of 39\n",
       "Looking at Lil Debbie who has a popularity of 43\n",
       "Looking at Lil Twist who has a popularity of 39\n",
       "Looking at Lil Trill who has a popularity of 37\n",
-      "Looking at Lil Boom who has a popularity of 39\n",
-      "Looking at Lil Twon who has a popularity of 37\n",
       "Looking at Lil AJ who has a popularity of 37\n",
       "Looking at Lil Lonnie who has a popularity of 37\n",
-      "Looking at Lil Goofy who has a popularity of 35\n",
+      "Looking at Lil Twon who has a popularity of 37\n",
       "Looking at Lil Haiti who has a popularity of 36\n",
+      "Looking at Lil Goofy who has a popularity of 35\n",
       "Looking at Mr. Lil One who has a popularity of 36\n",
       "Looking at Lil Cray who has a popularity of 35\n",
       "Looking at Lil Flash who has a popularity of 38\n",
       "Looking at Lil Silva who has a popularity of 43\n",
-      "Looking at Lil Kesh who has a popularity of 39\n",
-      "Looking at Lil Rue who has a popularity of 34\n",
       "Looking at Lil Yase who has a popularity of 34\n",
+      "Looking at Lil Rue who has a popularity of 34\n",
       "Looking at Lil Eddie who has a popularity of 41\n",
+      "Looking at Lil Kesh who has a popularity of 39\n",
       "Looking at Lil Wayne, DJ Drama who has a popularity of 35\n",
       "Looking at Lil Suzy who has a popularity of 34\n",
       "Looking at Lil Mouse who has a popularity of 34\n",
@@ -875,23 +879,23 @@
       "Lil' Kim ID: 5tth2a3v0sWwV1C7bApBdX\n",
       "Lil Cuete ID: 1I5u5Umau1AgHl0ZbPL1oR\n",
       "Lil Phat ID: 3QnIBUOS4mUzs67rZ8r4c9\n",
+      "Lil Boom ID: 1mmlWsyPJvvxMdabcGJjRn\n",
       "Lil Debbie ID: 3FNZcjyqT7F5upP99JV0oN\n",
       "Lil Twist ID: 564gvOqSRcQoYAhaBpTiK2\n",
       "Lil Trill ID: 5EQERGi7ffHvHsv3bnqzBn\n",
-      "Lil Boom ID: 1mmlWsyPJvvxMdabcGJjRn\n",
-      "Lil Twon ID: 5YZZbPdI7P7te3lW3dTpzK\n",
       "Lil AJ ID: 2jXwYLNnCxNavms4mc1DYM\n",
       "Lil Lonnie ID: 6zSBkdKFLKKggDtE3amfCk\n",
-      "Lil Goofy ID: 3rWaFjgOi5mjQfllMfN3VI\n",
+      "Lil Twon ID: 5YZZbPdI7P7te3lW3dTpzK\n",
       "Lil Haiti ID: 4E9dumwOMLlTyXUp1i2WdI\n",
+      "Lil Goofy ID: 3rWaFjgOi5mjQfllMfN3VI\n",
       "Mr. Lil One ID: 6tslWi0BXiDdtChermDzkU\n",
       "Lil Cray ID: 43BqexhEx5NKF7VfeOYP9m\n",
       "Lil Flash ID: 069qBEK34YGoX7nSIT74Eg\n",
       "Lil Silva ID: 2Kv0ApBohrL213X9avMrEn\n",
-      "Lil Kesh ID: 38XiDu0kK3Z5jdHUDqBzNT\n",
-      "Lil Rue ID: 4IFVaKBbEO8Qkurg6nmoc4\n",
       "Lil Yase ID: 4vIlHBnzWKbmWe8ZOkT1ZT\n",
+      "Lil Rue ID: 4IFVaKBbEO8Qkurg6nmoc4\n",
       "Lil Eddie ID: 5CY0QKsbUBpQJIE2yycsYi\n",
+      "Lil Kesh ID: 38XiDu0kK3Z5jdHUDqBzNT\n",
       "Lil Wayne, DJ Drama ID: 65npPa1U4cgobX9wU7Jgpb\n",
       "Lil Suzy ID: 5HPsVk1MblCoa44WLJsQwN\n",
       "Lil Mouse ID: 1cEHxCgGlEgqBc91YOcAEQ\n",
@@ -920,7 +924,7 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "{'tracks': [{'uri': 'spotify:track:60FUCHW3nR5IIftByVjBmB', 'track_number': 7, 'external_urls': {'spotify': 'https://open.spotify.com/track/60FUCHW3nR5IIftByVjBmB'}, 'disc_number': 1, 'available_markets': ['CA', 'MX', 'US'], 'explicit': True, 'type': 'track', 'id': '60FUCHW3nR5IIftByVjBmB', 'href': 'https://api.spotify.com/v1/tracks/60FUCHW3nR5IIftByVjBmB', 'album': {'type': 'album', 'id': '57AbXDTvGGw2GDC6rrsH2m', 'uri': 'spotify:album:57AbXDTvGGw2GDC6rrsH2m', 'href': 'https://api.spotify.com/v1/albums/57AbXDTvGGw2GDC6rrsH2m', 'name': 'Ludacris Presents...Disturbing Tha Peace (Explicit Version)', 'album_type': 'album', 'external_urls': {'spotify': 'https://open.spotify.com/album/57AbXDTvGGw2GDC6rrsH2m'}, 'available_markets': ['CA', 'MX', 'US'], 'images': [{'url': 'https://i.scdn.co/image/624e4bd7bd0a5714d0bc44b30bf5667868365a9d', 'width': 640, 'height': 635}, {'url': 'https://i.scdn.co/image/f12f98e24945d6c47932878ce6eea91a7bd61f46', 'width': 300, 'height': 297}, {'url': 'https://i.scdn.co/image/21f753dee667340d202ee2a84be455f31b1c7ec6', 'width': 64, 'height': 63}]}, 'name': 'Break A N**a Off', 'preview_url': 'https://p.scdn.co/mp3-preview/19381ff72ed3a509ed19c72138d2471ce7d377d2', 'external_ids': {'isrc': 'USUM70506893'}, 'artists': [{'type': 'artist', 'id': '6JUnsP7jmvYmdhbg7lTMQj', 'uri': 'spotify:artist:6JUnsP7jmvYmdhbg7lTMQj', 'href': 'https://api.spotify.com/v1/artists/6JUnsP7jmvYmdhbg7lTMQj', 'name': 'Lil Fate', 'external_urls': {'spotify': 'https://open.spotify.com/artist/6JUnsP7jmvYmdhbg7lTMQj'}}, {'type': 'artist', 'id': '6mXlDbi03T8wXYwWYew0Ut', 'uri': 'spotify:artist:6mXlDbi03T8wXYwWYew0Ut', 'href': 'https://api.spotify.com/v1/artists/6mXlDbi03T8wXYwWYew0Ut', 'name': 'Rich Boy', 'external_urls': {'spotify': 'https://open.spotify.com/artist/6mXlDbi03T8wXYwWYew0Ut'}}, {'type': 'artist', 'id': '3ppZNqihWOzuH4A0f4KmeP', 'uri': 'spotify:artist:3ppZNqihWOzuH4A0f4KmeP', 'href': 'https://api.spotify.com/v1/artists/3ppZNqihWOzuH4A0f4KmeP', 'name': 'Gangsta Boo', 'external_urls': {'spotify': 'https://open.spotify.com/artist/3ppZNqihWOzuH4A0f4KmeP'}}], 'popularity': 20, 'duration_ms': 218026}]}\n"
+      "{'tracks': [{'disc_number': 1, 'href': 'https://api.spotify.com/v1/tracks/60FUCHW3nR5IIftByVjBmB', 'available_markets': ['CA', 'MX', 'US'], 'duration_ms': 218026, 'popularity': 20, 'name': 'Break A N**a Off', 'track_number': 7, 'explicit': True, 'type': 'track', 'album': {'type': 'album', 'id': '57AbXDTvGGw2GDC6rrsH2m', 'href': 'https://api.spotify.com/v1/albums/57AbXDTvGGw2GDC6rrsH2m', 'available_markets': ['CA', 'MX', 'US'], 'uri': 'spotify:album:57AbXDTvGGw2GDC6rrsH2m', 'images': [{'url': 'https://i.scdn.co/image/624e4bd7bd0a5714d0bc44b30bf5667868365a9d', 'height': 635, 'width': 640}, {'url': 'https://i.scdn.co/image/f12f98e24945d6c47932878ce6eea91a7bd61f46', 'height': 297, 'width': 300}, {'url': 'https://i.scdn.co/image/21f753dee667340d202ee2a84be455f31b1c7ec6', 'height': 63, 'width': 64}], 'name': 'Ludacris Presents...Disturbing Tha Peace (Explicit Version)', 'external_urls': {'spotify': 'https://open.spotify.com/album/57AbXDTvGGw2GDC6rrsH2m'}, 'album_type': 'album'}, 'id': '60FUCHW3nR5IIftByVjBmB', 'external_ids': {'isrc': 'USUM70506893'}, 'uri': 'spotify:track:60FUCHW3nR5IIftByVjBmB', 'preview_url': 'https://p.scdn.co/mp3-preview/19381ff72ed3a509ed19c72138d2471ce7d377d2', 'artists': [{'type': 'artist', 'id': '6JUnsP7jmvYmdhbg7lTMQj', 'href': 'https://api.spotify.com/v1/artists/6JUnsP7jmvYmdhbg7lTMQj', 'uri': 'spotify:artist:6JUnsP7jmvYmdhbg7lTMQj', 'name': 'Lil Fate', 'external_urls': {'spotify': 'https://open.spotify.com/artist/6JUnsP7jmvYmdhbg7lTMQj'}}, {'type': 'artist', 'id': '6mXlDbi03T8wXYwWYew0Ut', 'href': 'https://api.spotify.com/v1/artists/6mXlDbi03T8wXYwWYew0Ut', 'uri': 'spotify:artist:6mXlDbi03T8wXYwWYew0Ut', 'name': 'Rich Boy', 'external_urls': {'spotify': 'https://open.spotify.com/artist/6mXlDbi03T8wXYwWYew0Ut'}}, {'type': 'artist', 'id': '3ppZNqihWOzuH4A0f4KmeP', 'href': 'https://api.spotify.com/v1/artists/3ppZNqihWOzuH4A0f4KmeP', 'uri': 'spotify:artist:3ppZNqihWOzuH4A0f4KmeP', 'name': 'Gangsta Boo', 'external_urls': {'spotify': 'https://open.spotify.com/artist/3ppZNqihWOzuH4A0f4KmeP'}}], 'external_urls': {'spotify': 'https://open.spotify.com/track/60FUCHW3nR5IIftByVjBmB'}}]}\n"
      ]
     }
    ],
@@ -1011,7 +1015,7 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "[{'uri': 'spotify:track:60FUCHW3nR5IIftByVjBmB', 'track_number': 7, 'external_urls': {'spotify': 'https://open.spotify.com/track/60FUCHW3nR5IIftByVjBmB'}, 'disc_number': 1, 'available_markets': ['CA', 'MX', 'US'], 'explicit': True, 'type': 'track', 'id': '60FUCHW3nR5IIftByVjBmB', 'href': 'https://api.spotify.com/v1/tracks/60FUCHW3nR5IIftByVjBmB', 'album': {'type': 'album', 'id': '57AbXDTvGGw2GDC6rrsH2m', 'uri': 'spotify:album:57AbXDTvGGw2GDC6rrsH2m', 'href': 'https://api.spotify.com/v1/albums/57AbXDTvGGw2GDC6rrsH2m', 'name': 'Ludacris Presents...Disturbing Tha Peace (Explicit Version)', 'album_type': 'album', 'external_urls': {'spotify': 'https://open.spotify.com/album/57AbXDTvGGw2GDC6rrsH2m'}, 'available_markets': ['CA', 'MX', 'US'], 'images': [{'url': 'https://i.scdn.co/image/624e4bd7bd0a5714d0bc44b30bf5667868365a9d', 'width': 640, 'height': 635}, {'url': 'https://i.scdn.co/image/f12f98e24945d6c47932878ce6eea91a7bd61f46', 'width': 300, 'height': 297}, {'url': 'https://i.scdn.co/image/21f753dee667340d202ee2a84be455f31b1c7ec6', 'width': 64, 'height': 63}]}, 'name': 'Break A N**a Off', 'preview_url': 'https://p.scdn.co/mp3-preview/19381ff72ed3a509ed19c72138d2471ce7d377d2', 'external_ids': {'isrc': 'USUM70506893'}, 'artists': [{'type': 'artist', 'id': '6JUnsP7jmvYmdhbg7lTMQj', 'uri': 'spotify:artist:6JUnsP7jmvYmdhbg7lTMQj', 'href': 'https://api.spotify.com/v1/artists/6JUnsP7jmvYmdhbg7lTMQj', 'name': 'Lil Fate', 'external_urls': {'spotify': 'https://open.spotify.com/artist/6JUnsP7jmvYmdhbg7lTMQj'}}, {'type': 'artist', 'id': '6mXlDbi03T8wXYwWYew0Ut', 'uri': 'spotify:artist:6mXlDbi03T8wXYwWYew0Ut', 'href': 'https://api.spotify.com/v1/artists/6mXlDbi03T8wXYwWYew0Ut', 'name': 'Rich Boy', 'external_urls': {'spotify': 'https://open.spotify.com/artist/6mXlDbi03T8wXYwWYew0Ut'}}, {'type': 'artist', 'id': '3ppZNqihWOzuH4A0f4KmeP', 'uri': 'spotify:artist:3ppZNqihWOzuH4A0f4KmeP', 'href': 'https://api.spotify.com/v1/artists/3ppZNqihWOzuH4A0f4KmeP', 'name': 'Gangsta Boo', 'external_urls': {'spotify': 'https://open.spotify.com/artist/3ppZNqihWOzuH4A0f4KmeP'}}], 'popularity': 20, 'duration_ms': 218026}]\n"
+      "[{'disc_number': 1, 'href': 'https://api.spotify.com/v1/tracks/60FUCHW3nR5IIftByVjBmB', 'available_markets': ['CA', 'MX', 'US'], 'duration_ms': 218026, 'popularity': 20, 'name': 'Break A N**a Off', 'track_number': 7, 'explicit': True, 'type': 'track', 'album': {'type': 'album', 'id': '57AbXDTvGGw2GDC6rrsH2m', 'href': 'https://api.spotify.com/v1/albums/57AbXDTvGGw2GDC6rrsH2m', 'available_markets': ['CA', 'MX', 'US'], 'uri': 'spotify:album:57AbXDTvGGw2GDC6rrsH2m', 'images': [{'url': 'https://i.scdn.co/image/624e4bd7bd0a5714d0bc44b30bf5667868365a9d', 'height': 635, 'width': 640}, {'url': 'https://i.scdn.co/image/f12f98e24945d6c47932878ce6eea91a7bd61f46', 'height': 297, 'width': 300}, {'url': 'https://i.scdn.co/image/21f753dee667340d202ee2a84be455f31b1c7ec6', 'height': 63, 'width': 64}], 'name': 'Ludacris Presents...Disturbing Tha Peace (Explicit Version)', 'external_urls': {'spotify': 'https://open.spotify.com/album/57AbXDTvGGw2GDC6rrsH2m'}, 'album_type': 'album'}, 'id': '60FUCHW3nR5IIftByVjBmB', 'external_ids': {'isrc': 'USUM70506893'}, 'uri': 'spotify:track:60FUCHW3nR5IIftByVjBmB', 'preview_url': 'https://p.scdn.co/mp3-preview/19381ff72ed3a509ed19c72138d2471ce7d377d2', 'artists': [{'type': 'artist', 'id': '6JUnsP7jmvYmdhbg7lTMQj', 'href': 'https://api.spotify.com/v1/artists/6JUnsP7jmvYmdhbg7lTMQj', 'uri': 'spotify:artist:6JUnsP7jmvYmdhbg7lTMQj', 'name': 'Lil Fate', 'external_urls': {'spotify': 'https://open.spotify.com/artist/6JUnsP7jmvYmdhbg7lTMQj'}}, {'type': 'artist', 'id': '6mXlDbi03T8wXYwWYew0Ut', 'href': 'https://api.spotify.com/v1/artists/6mXlDbi03T8wXYwWYew0Ut', 'uri': 'spotify:artist:6mXlDbi03T8wXYwWYew0Ut', 'name': 'Rich Boy', 'external_urls': {'spotify': 'https://open.spotify.com/artist/6mXlDbi03T8wXYwWYew0Ut'}}, {'type': 'artist', 'id': '3ppZNqihWOzuH4A0f4KmeP', 'href': 'https://api.spotify.com/v1/artists/3ppZNqihWOzuH4A0f4KmeP', 'uri': 'spotify:artist:3ppZNqihWOzuH4A0f4KmeP', 'name': 'Gangsta Boo', 'external_urls': {'spotify': 'https://open.spotify.com/artist/3ppZNqihWOzuH4A0f4KmeP'}}], 'external_urls': {'spotify': 'https://open.spotify.com/track/60FUCHW3nR5IIftByVjBmB'}}]\n"
      ]
     }
    ],
@@ -1092,7 +1096,7 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "[{'uri': 'spotify:track:45f8NLNAthLQqji8lRVuOV', 'track_number': 1, 'external_urls': {'spotify': 'https://open.spotify.com/track/45f8NLNAthLQqji8lRVuOV'}, 'disc_number': 1, 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'explicit': True, 'type': 'track', 'id': '45f8NLNAthLQqji8lRVuOV', 'href': 'https://api.spotify.com/v1/tracks/45f8NLNAthLQqji8lRVuOV', 'album': {'type': 'album', 'id': '3XHnTdk5nmiI9BXNXimEBG', 'uri': 'spotify:album:3XHnTdk5nmiI9BXNXimEBG', 'href': 'https://api.spotify.com/v1/albums/3XHnTdk5nmiI9BXNXimEBG', 'name': 'Ak47boyz', 'album_type': 'album', 'external_urls': {'spotify': 'https://open.spotify.com/album/3XHnTdk5nmiI9BXNXimEBG'}, 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'images': [{'url': 'https://i.scdn.co/image/1c0637a5cfab1d2e605f0ec8ff33aa99bbebab38', 'width': 640, 'height': 640}, {'url': 'https://i.scdn.co/image/59914e47f7eea38ebada6ae81909e1bcea4cdd57', 'width': 300, 'height': 300}, {'url': 'https://i.scdn.co/image/0c68daeaeb4e84dbd25d6e4976aaa422e93d238c', 'width': 64, 'height': 64}]}, 'name': 'Hopeless Boy (feat. David Ortiz)', 'preview_url': 'https://p.scdn.co/mp3-preview/734cf86b202388c1db5f1ccd8855818ad79ad30d', 'external_ids': {'isrc': 'USASN1401183'}, 'artists': [{'type': 'artist', 'id': '6L3x3if9RVimruryD9LoFb', 'uri': 'spotify:artist:6L3x3if9RVimruryD9LoFb', 'href': 'https://api.spotify.com/v1/artists/6L3x3if9RVimruryD9LoFb', 'name': 'King Lil G', 'external_urls': {'spotify': 'https://open.spotify.com/artist/6L3x3if9RVimruryD9LoFb'}}, {'type': 'artist', 'id': '5ntrzTi4BYgO8N0Yuqn1ng', 'uri': 'spotify:artist:5ntrzTi4BYgO8N0Yuqn1ng', 'href': 'https://api.spotify.com/v1/artists/5ntrzTi4BYgO8N0Yuqn1ng', 'name': 'David Ortiz', 'external_urls': {'spotify': 'https://open.spotify.com/artist/5ntrzTi4BYgO8N0Yuqn1ng'}}], 'popularity': 55, 'duration_ms': 193786}, {'uri': 'spotify:track:3iwt15Ynm0cYicIGQ9hAr0', 'track_number': 2, 'external_urls': {'spotify': 'https://open.spotify.com/track/3iwt15Ynm0cYicIGQ9hAr0'}, 'disc_number': 1, 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'explicit': True, 'type': 'track', 'id': '3iwt15Ynm0cYicIGQ9hAr0', 'href': 'https://api.spotify.com/v1/tracks/3iwt15Ynm0cYicIGQ9hAr0', 'album': {'type': 'album', 'id': '14gzpwKOba6QQ1HsYifM0a', 'uri': 'spotify:album:14gzpwKOba6QQ1HsYifM0a', 'href': 'https://api.spotify.com/v1/albums/14gzpwKOba6QQ1HsYifM0a', 'name': \"90's Kid\", 'album_type': 'album', 'external_urls': {'spotify': 'https://open.spotify.com/album/14gzpwKOba6QQ1HsYifM0a'}, 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'images': [{'url': 'https://i.scdn.co/image/a642fb3016b081274cc95c2e28029d3b25889ef0', 'width': 640, 'height': 640}, {'url': 'https://i.scdn.co/image/c19dcb1b9f8817919022e3d95a428060758c8ec8', 'width': 300, 'height': 300}, {'url': 'https://i.scdn.co/image/fc0e6255f96dc6e0cbd118e1e71d0851a275f272', 'width': 64, 'height': 64}]}, 'name': 'Ignorance', 'preview_url': 'https://p.scdn.co/mp3-preview/b7962ea6c5d25c1ffdbe2c784761116df6e9c8d6', 'external_ids': {'isrc': 'USASN1500302'}, 'artists': [{'type': 'artist', 'id': '6L3x3if9RVimruryD9LoFb', 'uri': 'spotify:artist:6L3x3if9RVimruryD9LoFb', 'href': 'https://api.spotify.com/v1/artists/6L3x3if9RVimruryD9LoFb', 'name': 'King Lil G', 'external_urls': {'spotify': 'https://open.spotify.com/artist/6L3x3if9RVimruryD9LoFb'}}], 'popularity': 54, 'duration_ms': 166626}, {'uri': 'spotify:track:5oTzlrZ8WTDIHeTsz4Jw3z', 'track_number': 2, 'external_urls': {'spotify': 'https://open.spotify.com/track/5oTzlrZ8WTDIHeTsz4Jw3z'}, 'disc_number': 1, 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'explicit': True, 'type': 'track', 'id': '5oTzlrZ8WTDIHeTsz4Jw3z', 'href': 'https://api.spotify.com/v1/tracks/5oTzlrZ8WTDIHeTsz4Jw3z', 'album': {'type': 'album', 'id': '3XHnTdk5nmiI9BXNXimEBG', 'uri': 'spotify:album:3XHnTdk5nmiI9BXNXimEBG', 'href': 'https://api.spotify.com/v1/albums/3XHnTdk5nmiI9BXNXimEBG', 'name': 'Ak47boyz', 'album_type': 'album', 'external_urls': {'spotify': 'https://open.spotify.com/album/3XHnTdk5nmiI9BXNXimEBG'}, 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'images': [{'url': 'https://i.scdn.co/image/1c0637a5cfab1d2e605f0ec8ff33aa99bbebab38', 'width': 640, 'height': 640}, {'url': 'https://i.scdn.co/image/59914e47f7eea38ebada6ae81909e1bcea4cdd57', 'width': 300, 'height': 300}, {'url': 'https://i.scdn.co/image/0c68daeaeb4e84dbd25d6e4976aaa422e93d238c', 'width': 64, 'height': 64}]}, 'name': 'Ak47', 'preview_url': 'https://p.scdn.co/mp3-preview/1c0e026feb2d58555f99d8204fdee48b4d19a2b3', 'external_ids': {'isrc': 'USASN1401184'}, 'artists': [{'type': 'artist', 'id': '6L3x3if9RVimruryD9LoFb', 'uri': 'spotify:artist:6L3x3if9RVimruryD9LoFb', 'href': 'https://api.spotify.com/v1/artists/6L3x3if9RVimruryD9LoFb', 'name': 'King Lil G', 'external_urls': {'spotify': 'https://open.spotify.com/artist/6L3x3if9RVimruryD9LoFb'}}], 'popularity': 54, 'duration_ms': 227986}, {'uri': 'spotify:track:2av09FAN9J7IgxCQ6od4SF', 'track_number': 3, 'external_urls': {'spotify': 'https://open.spotify.com/track/2av09FAN9J7IgxCQ6od4SF'}, 'disc_number': 1, 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'explicit': True, 'type': 'track', 'id': '2av09FAN9J7IgxCQ6od4SF', 'href': 'https://api.spotify.com/v1/tracks/2av09FAN9J7IgxCQ6od4SF', 'album': {'type': 'album', 'id': '14gzpwKOba6QQ1HsYifM0a', 'uri': 'spotify:album:14gzpwKOba6QQ1HsYifM0a', 'href': 'https://api.spotify.com/v1/albums/14gzpwKOba6QQ1HsYifM0a', 'name': \"90's Kid\", 'album_type': 'album', 'external_urls': {'spotify': 'https://open.spotify.com/album/14gzpwKOba6QQ1HsYifM0a'}, 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'images': [{'url': 'https://i.scdn.co/image/a642fb3016b081274cc95c2e28029d3b25889ef0', 'width': 640, 'height': 640}, {'url': 'https://i.scdn.co/image/c19dcb1b9f8817919022e3d95a428060758c8ec8', 'width': 300, 'height': 300}, {'url': 'https://i.scdn.co/image/fc0e6255f96dc6e0cbd118e1e71d0851a275f272', 'width': 64, 'height': 64}]}, 'name': 'Grow Up (feat. Chikk)', 'preview_url': 'https://p.scdn.co/mp3-preview/ad5f4b940fa7c4dab93f5d0328a6341e3d208cbf', 'external_ids': {'isrc': 'USASN1500303'}, 'artists': [{'type': 'artist', 'id': '6L3x3if9RVimruryD9LoFb', 'uri': 'spotify:artist:6L3x3if9RVimruryD9LoFb', 'href': 'https://api.spotify.com/v1/artists/6L3x3if9RVimruryD9LoFb', 'name': 'King Lil G', 'external_urls': {'spotify': 'https://open.spotify.com/artist/6L3x3if9RVimruryD9LoFb'}}, {'type': 'artist', 'id': '4tXAYCJxzb9PlyZGVQeVXn', 'uri': 'spotify:artist:4tXAYCJxzb9PlyZGVQeVXn', 'href': 'https://api.spotify.com/v1/artists/4tXAYCJxzb9PlyZGVQeVXn', 'name': 'Chikk', 'external_urls': {'spotify': 'https://open.spotify.com/artist/4tXAYCJxzb9PlyZGVQeVXn'}}], 'popularity': 53, 'duration_ms': 187586}, {'uri': 'spotify:track:0a5sHdXW7XokUN5Gqgr1vb', 'track_number': 1, 'external_urls': {'spotify': 'https://open.spotify.com/track/0a5sHdXW7XokUN5Gqgr1vb'}, 'disc_number': 1, 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'explicit': True, 'type': 'track', 'id': '0a5sHdXW7XokUN5Gqgr1vb', 'href': 'https://api.spotify.com/v1/tracks/0a5sHdXW7XokUN5Gqgr1vb', 'album': {'type': 'album', 'id': '4rXtpZpRBrfCWERJEzoCRb', 'uri': 'spotify:album:4rXtpZpRBrfCWERJEzoCRb', 'href': 'https://api.spotify.com/v1/albums/4rXtpZpRBrfCWERJEzoCRb', 'name': 'Lost In Smoke 2', 'album_type': 'album', 'external_urls': {'spotify': 'https://open.spotify.com/album/4rXtpZpRBrfCWERJEzoCRb'}, 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'images': [{'url': 'https://i.scdn.co/image/e0e8425e45e0f33b804becc5001b46b05fe98dd8', 'width': 640, 'height': 640}, {'url': 'https://i.scdn.co/image/d2101a2b13dbcace85fdb14e8da5266f43c1feb4', 'width': 300, 'height': 300}, {'url': 'https://i.scdn.co/image/99b1e90cff3937cd402e860b3f1d31957238a6f4', 'width': 64, 'height': 64}]}, 'name': 'Cold Christmas', 'preview_url': 'https://p.scdn.co/mp3-preview/5135e2a4962905841a0d9b67dbb8654ea9662eec', 'external_ids': {'isrc': 'USE7D1600019'}, 'artists': [{'type': 'artist', 'id': '6L3x3if9RVimruryD9LoFb', 'uri': 'spotify:artist:6L3x3if9RVimruryD9LoFb', 'href': 'https://api.spotify.com/v1/artists/6L3x3if9RVimruryD9LoFb', 'name': 'King Lil G', 'external_urls': {'spotify': 'https://open.spotify.com/artist/6L3x3if9RVimruryD9LoFb'}}], 'popularity': 52, 'duration_ms': 242372}, {'uri': 'spotify:track:5542ZgcaVlugxNYM4E7wRf', 'track_number': 8, 'external_urls': {'spotify': 'https://open.spotify.com/track/5542ZgcaVlugxNYM4E7wRf'}, 'disc_number': 1, 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'explicit': True, 'type': 'track', 'id': '5542ZgcaVlugxNYM4E7wRf', 'href': 'https://api.spotify.com/v1/tracks/5542ZgcaVlugxNYM4E7wRf', 'album': {'type': 'album', 'id': '0G17liCRw1GYfissTAdWlf', 'uri': 'spotify:album:0G17liCRw1GYfissTAdWlf', 'href': 'https://api.spotify.com/v1/albums/0G17liCRw1GYfissTAdWlf', 'name': 'Lost in Smoke', 'album_type': 'album', 'external_urls': {'spotify': 'https://open.spotify.com/album/0G17liCRw1GYfissTAdWlf'}, 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'images': [{'url': 'https://i.scdn.co/image/6e810782c6c7a05cc50a4e121affe1bedb39be43', 'width': 640, 'height': 640}, {'url': 'https://i.scdn.co/image/508311289eb6b336f0c3bade308b7e37a7e83345', 'width': 300, 'height': 300}, {'url': 'https://i.scdn.co/image/ef0f9fa1fe3a2d528e35301e62c342ad434a796b', 'width': 64, 'height': 64}]}, 'name': 'Welcome to La', 'preview_url': 'https://p.scdn.co/mp3-preview/185b3eb4fe99711aa541776bf231e75fcfd0efa0', 'external_ids': {'isrc': 'USASN1302113'}, 'artists': [{'type': 'artist', 'id': '6L3x3if9RVimruryD9LoFb', 'uri': 'spotify:artist:6L3x3if9RVimruryD9LoFb', 'href': 'https://api.spotify.com/v1/artists/6L3x3if9RVimruryD9LoFb', 'name': 'King Lil G', 'external_urls': {'spotify': 'https://open.spotify.com/artist/6L3x3if9RVimruryD9LoFb'}}], 'popularity': 51, 'duration_ms': 216440}, {'uri': 'spotify:track:2YcgCfn4v62JvPvyTqxMxH', 'track_number': 15, 'external_urls': {'spotify': 'https://open.spotify.com/track/2YcgCfn4v62JvPvyTqxMxH'}, 'disc_number': 1, 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'explicit': True, 'type': 'track', 'id': '2YcgCfn4v62JvPvyTqxMxH', 'href': 'https://api.spotify.com/v1/tracks/2YcgCfn4v62JvPvyTqxMxH', 'album': {'type': 'album', 'id': '4rXtpZpRBrfCWERJEzoCRb', 'uri': 'spotify:album:4rXtpZpRBrfCWERJEzoCRb', 'href': 'https://api.spotify.com/v1/albums/4rXtpZpRBrfCWERJEzoCRb', 'name': 'Lost In Smoke 2', 'album_type': 'album', 'external_urls': {'spotify': 'https://open.spotify.com/album/4rXtpZpRBrfCWERJEzoCRb'}, 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'images': [{'url': 'https://i.scdn.co/image/e0e8425e45e0f33b804becc5001b46b05fe98dd8', 'width': 640, 'height': 640}, {'url': 'https://i.scdn.co/image/d2101a2b13dbcace85fdb14e8da5266f43c1feb4', 'width': 300, 'height': 300}, {'url': 'https://i.scdn.co/image/99b1e90cff3937cd402e860b3f1d31957238a6f4', 'width': 64, 'height': 64}]}, 'name': 'After My Death', 'preview_url': 'https://p.scdn.co/mp3-preview/e9ed2eb7bcf06b93b61550a204c18e42a1dbd097', 'external_ids': {'isrc': 'USE7D1600040'}, 'artists': [{'type': 'artist', 'id': '6L3x3if9RVimruryD9LoFb', 'uri': 'spotify:artist:6L3x3if9RVimruryD9LoFb', 'href': 'https://api.spotify.com/v1/artists/6L3x3if9RVimruryD9LoFb', 'name': 'King Lil G', 'external_urls': {'spotify': 'https://open.spotify.com/artist/6L3x3if9RVimruryD9LoFb'}}], 'popularity': 51, 'duration_ms': 192520}, {'uri': 'spotify:track:5cWvvagtENe3lGXS2VK0po', 'track_number': 4, 'external_urls': {'spotify': 'https://open.spotify.com/track/5cWvvagtENe3lGXS2VK0po'}, 'disc_number': 1, 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'explicit': True, 'type': 'track', 'id': '5cWvvagtENe3lGXS2VK0po', 'href': 'https://api.spotify.com/v1/tracks/5cWvvagtENe3lGXS2VK0po', 'album': {'type': 'album', 'id': '3XHnTdk5nmiI9BXNXimEBG', 'uri': 'spotify:album:3XHnTdk5nmiI9BXNXimEBG', 'href': 'https://api.spotify.com/v1/albums/3XHnTdk5nmiI9BXNXimEBG', 'name': 'Ak47boyz', 'album_type': 'album', 'external_urls': {'spotify': 'https://open.spotify.com/album/3XHnTdk5nmiI9BXNXimEBG'}, 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'images': [{'url': 'https://i.scdn.co/image/1c0637a5cfab1d2e605f0ec8ff33aa99bbebab38', 'width': 640, 'height': 640}, {'url': 'https://i.scdn.co/image/59914e47f7eea38ebada6ae81909e1bcea4cdd57', 'width': 300, 'height': 300}, {'url': 'https://i.scdn.co/image/0c68daeaeb4e84dbd25d6e4976aaa422e93d238c', 'width': 64, 'height': 64}]}, 'name': 'Windows Down (feat. Drummer Boy)', 'preview_url': 'https://p.scdn.co/mp3-preview/446eb19f1e1f12ad768a6818b5a86ed35ba322c9', 'external_ids': {'isrc': 'USASN1401186'}, 'artists': [{'type': 'artist', 'id': '6L3x3if9RVimruryD9LoFb', 'uri': 'spotify:artist:6L3x3if9RVimruryD9LoFb', 'href': 'https://api.spotify.com/v1/artists/6L3x3if9RVimruryD9LoFb', 'name': 'King Lil G', 'external_urls': {'spotify': 'https://open.spotify.com/artist/6L3x3if9RVimruryD9LoFb'}}, {'type': 'artist', 'id': '4vE0ADCdH854d1kss98REy', 'uri': 'spotify:artist:4vE0ADCdH854d1kss98REy', 'href': 'https://api.spotify.com/v1/artists/4vE0ADCdH854d1kss98REy', 'name': 'Drummer Boy', 'external_urls': {'spotify': 'https://open.spotify.com/artist/4vE0ADCdH854d1kss98REy'}}], 'popularity': 50, 'duration_ms': 210000}, {'uri': 'spotify:track:4j3LMem6RqLz79Pmb5wPLG', 'track_number': 2, 'external_urls': {'spotify': 'https://open.spotify.com/track/4j3LMem6RqLz79Pmb5wPLG'}, 'disc_number': 1, 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'explicit': True, 'type': 'track', 'id': '4j3LMem6RqLz79Pmb5wPLG', 'href': 'https://api.spotify.com/v1/tracks/4j3LMem6RqLz79Pmb5wPLG', 'album': {'type': 'album', 'id': '4rXtpZpRBrfCWERJEzoCRb', 'uri': 'spotify:album:4rXtpZpRBrfCWERJEzoCRb', 'href': 'https://api.spotify.com/v1/albums/4rXtpZpRBrfCWERJEzoCRb', 'name': 'Lost In Smoke 2', 'album_type': 'album', 'external_urls': {'spotify': 'https://open.spotify.com/album/4rXtpZpRBrfCWERJEzoCRb'}, 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'images': [{'url': 'https://i.scdn.co/image/e0e8425e45e0f33b804becc5001b46b05fe98dd8', 'width': 640, 'height': 640}, {'url': 'https://i.scdn.co/image/d2101a2b13dbcace85fdb14e8da5266f43c1feb4', 'width': 300, 'height': 300}, {'url': 'https://i.scdn.co/image/99b1e90cff3937cd402e860b3f1d31957238a6f4', 'width': 64, 'height': 64}]}, 'name': 'Room Full Of Smoke', 'preview_url': 'https://p.scdn.co/mp3-preview/490f1a66d92e062615f3914538b9b3882d0b855f', 'external_ids': {'isrc': 'USE7D1600038'}, 'artists': [{'type': 'artist', 'id': '6L3x3if9RVimruryD9LoFb', 'uri': 'spotify:artist:6L3x3if9RVimruryD9LoFb', 'href': 'https://api.spotify.com/v1/artists/6L3x3if9RVimruryD9LoFb', 'name': 'King Lil G', 'external_urls': {'spotify': 'https://open.spotify.com/artist/6L3x3if9RVimruryD9LoFb'}}], 'popularity': 50, 'duration_ms': 186425}, {'uri': 'spotify:track:1RXcXkfHRM0mr67t9sNsuT', 'track_number': 3, 'external_urls': {'spotify': 'https://open.spotify.com/track/1RXcXkfHRM0mr67t9sNsuT'}, 'disc_number': 1, 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'explicit': False, 'type': 'track', 'id': '1RXcXkfHRM0mr67t9sNsuT', 'href': 'https://api.spotify.com/v1/tracks/1RXcXkfHRM0mr67t9sNsuT', 'album': {'type': 'album', 'id': '0HaEvVsikL92OCCWKWn8Pj', 'uri': 'spotify:album:0HaEvVsikL92OCCWKWn8Pj', 'href': 'https://api.spotify.com/v1/albums/0HaEvVsikL92OCCWKWn8Pj', 'name': 'King Enemy', 'album_type': 'album', 'external_urls': {'spotify': 'https://open.spotify.com/album/0HaEvVsikL92OCCWKWn8Pj'}, 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'images': [{'url': 'https://i.scdn.co/image/c309a6ebe37cf1fe226f829d7ecc5cf52ef76b1d', 'width': 640, 'height': 640}, {'url': 'https://i.scdn.co/image/3fcc6688db539ddbb4d36fab4219746059e663e4', 'width': 300, 'height': 300}, {'url': 'https://i.scdn.co/image/74b2759ff7e479d999cbd36fdbeca101333df5f7', 'width': 64, 'height': 64}]}, 'name': 'Narco Corridos', 'preview_url': 'https://p.scdn.co/mp3-preview/d00b0d0523b89db2f00e5a687a856fbf3d01fd6f', 'external_ids': {'isrc': 'USASN1201240'}, 'artists': [{'type': 'artist', 'id': '6L3x3if9RVimruryD9LoFb', 'uri': 'spotify:artist:6L3x3if9RVimruryD9LoFb', 'href': 'https://api.spotify.com/v1/artists/6L3x3if9RVimruryD9LoFb', 'name': 'King Lil G', 'external_urls': {'spotify': 'https://open.spotify.com/artist/6L3x3if9RVimruryD9LoFb'}}], 'popularity': 49, 'duration_ms': 248013}]\n"
+      "[{'disc_number': 1, 'href': 'https://api.spotify.com/v1/tracks/45f8NLNAthLQqji8lRVuOV', 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'duration_ms': 193786, 'popularity': 55, 'name': 'Hopeless Boy (feat. David Ortiz)', 'track_number': 1, 'explicit': True, 'type': 'track', 'album': {'type': 'album', 'id': '3XHnTdk5nmiI9BXNXimEBG', 'href': 'https://api.spotify.com/v1/albums/3XHnTdk5nmiI9BXNXimEBG', 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'uri': 'spotify:album:3XHnTdk5nmiI9BXNXimEBG', 'images': [{'url': 'https://i.scdn.co/image/1c0637a5cfab1d2e605f0ec8ff33aa99bbebab38', 'height': 640, 'width': 640}, {'url': 'https://i.scdn.co/image/59914e47f7eea38ebada6ae81909e1bcea4cdd57', 'height': 300, 'width': 300}, {'url': 'https://i.scdn.co/image/0c68daeaeb4e84dbd25d6e4976aaa422e93d238c', 'height': 64, 'width': 64}], 'name': 'Ak47boyz', 'external_urls': {'spotify': 'https://open.spotify.com/album/3XHnTdk5nmiI9BXNXimEBG'}, 'album_type': 'album'}, 'id': '45f8NLNAthLQqji8lRVuOV', 'external_ids': {'isrc': 'USASN1401183'}, 'uri': 'spotify:track:45f8NLNAthLQqji8lRVuOV', 'preview_url': 'https://p.scdn.co/mp3-preview/734cf86b202388c1db5f1ccd8855818ad79ad30d', 'artists': [{'type': 'artist', 'id': '6L3x3if9RVimruryD9LoFb', 'href': 'https://api.spotify.com/v1/artists/6L3x3if9RVimruryD9LoFb', 'uri': 'spotify:artist:6L3x3if9RVimruryD9LoFb', 'name': 'King Lil G', 'external_urls': {'spotify': 'https://open.spotify.com/artist/6L3x3if9RVimruryD9LoFb'}}, {'type': 'artist', 'id': '5ntrzTi4BYgO8N0Yuqn1ng', 'href': 'https://api.spotify.com/v1/artists/5ntrzTi4BYgO8N0Yuqn1ng', 'uri': 'spotify:artist:5ntrzTi4BYgO8N0Yuqn1ng', 'name': 'David Ortiz', 'external_urls': {'spotify': 'https://open.spotify.com/artist/5ntrzTi4BYgO8N0Yuqn1ng'}}], 'external_urls': {'spotify': 'https://open.spotify.com/track/45f8NLNAthLQqji8lRVuOV'}}, {'disc_number': 1, 'href': 'https://api.spotify.com/v1/tracks/3iwt15Ynm0cYicIGQ9hAr0', 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'duration_ms': 166626, 'popularity': 54, 'name': 'Ignorance', 'track_number': 2, 'explicit': True, 'type': 'track', 'album': {'type': 'album', 'id': '14gzpwKOba6QQ1HsYifM0a', 'href': 'https://api.spotify.com/v1/albums/14gzpwKOba6QQ1HsYifM0a', 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'uri': 'spotify:album:14gzpwKOba6QQ1HsYifM0a', 'images': [{'url': 'https://i.scdn.co/image/a642fb3016b081274cc95c2e28029d3b25889ef0', 'height': 640, 'width': 640}, {'url': 'https://i.scdn.co/image/c19dcb1b9f8817919022e3d95a428060758c8ec8', 'height': 300, 'width': 300}, {'url': 'https://i.scdn.co/image/fc0e6255f96dc6e0cbd118e1e71d0851a275f272', 'height': 64, 'width': 64}], 'name': \"90's Kid\", 'external_urls': {'spotify': 'https://open.spotify.com/album/14gzpwKOba6QQ1HsYifM0a'}, 'album_type': 'album'}, 'id': '3iwt15Ynm0cYicIGQ9hAr0', 'external_ids': {'isrc': 'USASN1500302'}, 'uri': 'spotify:track:3iwt15Ynm0cYicIGQ9hAr0', 'preview_url': 'https://p.scdn.co/mp3-preview/b7962ea6c5d25c1ffdbe2c784761116df6e9c8d6', 'artists': [{'type': 'artist', 'id': '6L3x3if9RVimruryD9LoFb', 'href': 'https://api.spotify.com/v1/artists/6L3x3if9RVimruryD9LoFb', 'uri': 'spotify:artist:6L3x3if9RVimruryD9LoFb', 'name': 'King Lil G', 'external_urls': {'spotify': 'https://open.spotify.com/artist/6L3x3if9RVimruryD9LoFb'}}], 'external_urls': {'spotify': 'https://open.spotify.com/track/3iwt15Ynm0cYicIGQ9hAr0'}}, {'disc_number': 1, 'href': 'https://api.spotify.com/v1/tracks/5oTzlrZ8WTDIHeTsz4Jw3z', 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'duration_ms': 227986, 'popularity': 54, 'name': 'Ak47', 'track_number': 2, 'explicit': True, 'type': 'track', 'album': {'type': 'album', 'id': '3XHnTdk5nmiI9BXNXimEBG', 'href': 'https://api.spotify.com/v1/albums/3XHnTdk5nmiI9BXNXimEBG', 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'uri': 'spotify:album:3XHnTdk5nmiI9BXNXimEBG', 'images': [{'url': 'https://i.scdn.co/image/1c0637a5cfab1d2e605f0ec8ff33aa99bbebab38', 'height': 640, 'width': 640}, {'url': 'https://i.scdn.co/image/59914e47f7eea38ebada6ae81909e1bcea4cdd57', 'height': 300, 'width': 300}, {'url': 'https://i.scdn.co/image/0c68daeaeb4e84dbd25d6e4976aaa422e93d238c', 'height': 64, 'width': 64}], 'name': 'Ak47boyz', 'external_urls': {'spotify': 'https://open.spotify.com/album/3XHnTdk5nmiI9BXNXimEBG'}, 'album_type': 'album'}, 'id': '5oTzlrZ8WTDIHeTsz4Jw3z', 'external_ids': {'isrc': 'USASN1401184'}, 'uri': 'spotify:track:5oTzlrZ8WTDIHeTsz4Jw3z', 'preview_url': 'https://p.scdn.co/mp3-preview/1c0e026feb2d58555f99d8204fdee48b4d19a2b3', 'artists': [{'type': 'artist', 'id': '6L3x3if9RVimruryD9LoFb', 'href': 'https://api.spotify.com/v1/artists/6L3x3if9RVimruryD9LoFb', 'uri': 'spotify:artist:6L3x3if9RVimruryD9LoFb', 'name': 'King Lil G', 'external_urls': {'spotify': 'https://open.spotify.com/artist/6L3x3if9RVimruryD9LoFb'}}], 'external_urls': {'spotify': 'https://open.spotify.com/track/5oTzlrZ8WTDIHeTsz4Jw3z'}}, {'disc_number': 1, 'href': 'https://api.spotify.com/v1/tracks/2av09FAN9J7IgxCQ6od4SF', 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'duration_ms': 187586, 'popularity': 53, 'name': 'Grow Up (feat. Chikk)', 'track_number': 3, 'explicit': True, 'type': 'track', 'album': {'type': 'album', 'id': '14gzpwKOba6QQ1HsYifM0a', 'href': 'https://api.spotify.com/v1/albums/14gzpwKOba6QQ1HsYifM0a', 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'uri': 'spotify:album:14gzpwKOba6QQ1HsYifM0a', 'images': [{'url': 'https://i.scdn.co/image/a642fb3016b081274cc95c2e28029d3b25889ef0', 'height': 640, 'width': 640}, {'url': 'https://i.scdn.co/image/c19dcb1b9f8817919022e3d95a428060758c8ec8', 'height': 300, 'width': 300}, {'url': 'https://i.scdn.co/image/fc0e6255f96dc6e0cbd118e1e71d0851a275f272', 'height': 64, 'width': 64}], 'name': \"90's Kid\", 'external_urls': {'spotify': 'https://open.spotify.com/album/14gzpwKOba6QQ1HsYifM0a'}, 'album_type': 'album'}, 'id': '2av09FAN9J7IgxCQ6od4SF', 'external_ids': {'isrc': 'USASN1500303'}, 'uri': 'spotify:track:2av09FAN9J7IgxCQ6od4SF', 'preview_url': 'https://p.scdn.co/mp3-preview/ad5f4b940fa7c4dab93f5d0328a6341e3d208cbf', 'artists': [{'type': 'artist', 'id': '6L3x3if9RVimruryD9LoFb', 'href': 'https://api.spotify.com/v1/artists/6L3x3if9RVimruryD9LoFb', 'uri': 'spotify:artist:6L3x3if9RVimruryD9LoFb', 'name': 'King Lil G', 'external_urls': {'spotify': 'https://open.spotify.com/artist/6L3x3if9RVimruryD9LoFb'}}, {'type': 'artist', 'id': '4tXAYCJxzb9PlyZGVQeVXn', 'href': 'https://api.spotify.com/v1/artists/4tXAYCJxzb9PlyZGVQeVXn', 'uri': 'spotify:artist:4tXAYCJxzb9PlyZGVQeVXn', 'name': 'Chikk', 'external_urls': {'spotify': 'https://open.spotify.com/artist/4tXAYCJxzb9PlyZGVQeVXn'}}], 'external_urls': {'spotify': 'https://open.spotify.com/track/2av09FAN9J7IgxCQ6od4SF'}}, {'disc_number': 1, 'href': 'https://api.spotify.com/v1/tracks/0a5sHdXW7XokUN5Gqgr1vb', 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'duration_ms': 242372, 'popularity': 52, 'name': 'Cold Christmas', 'track_number': 1, 'explicit': True, 'type': 'track', 'album': {'type': 'album', 'id': '4rXtpZpRBrfCWERJEzoCRb', 'href': 'https://api.spotify.com/v1/albums/4rXtpZpRBrfCWERJEzoCRb', 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'uri': 'spotify:album:4rXtpZpRBrfCWERJEzoCRb', 'images': [{'url': 'https://i.scdn.co/image/e0e8425e45e0f33b804becc5001b46b05fe98dd8', 'height': 640, 'width': 640}, {'url': 'https://i.scdn.co/image/d2101a2b13dbcace85fdb14e8da5266f43c1feb4', 'height': 300, 'width': 300}, {'url': 'https://i.scdn.co/image/99b1e90cff3937cd402e860b3f1d31957238a6f4', 'height': 64, 'width': 64}], 'name': 'Lost In Smoke 2', 'external_urls': {'spotify': 'https://open.spotify.com/album/4rXtpZpRBrfCWERJEzoCRb'}, 'album_type': 'album'}, 'id': '0a5sHdXW7XokUN5Gqgr1vb', 'external_ids': {'isrc': 'USE7D1600019'}, 'uri': 'spotify:track:0a5sHdXW7XokUN5Gqgr1vb', 'preview_url': 'https://p.scdn.co/mp3-preview/5135e2a4962905841a0d9b67dbb8654ea9662eec', 'artists': [{'type': 'artist', 'id': '6L3x3if9RVimruryD9LoFb', 'href': 'https://api.spotify.com/v1/artists/6L3x3if9RVimruryD9LoFb', 'uri': 'spotify:artist:6L3x3if9RVimruryD9LoFb', 'name': 'King Lil G', 'external_urls': {'spotify': 'https://open.spotify.com/artist/6L3x3if9RVimruryD9LoFb'}}], 'external_urls': {'spotify': 'https://open.spotify.com/track/0a5sHdXW7XokUN5Gqgr1vb'}}, {'disc_number': 1, 'href': 'https://api.spotify.com/v1/tracks/5542ZgcaVlugxNYM4E7wRf', 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'duration_ms': 216440, 'popularity': 51, 'name': 'Welcome to La', 'track_number': 8, 'explicit': True, 'type': 'track', 'album': {'type': 'album', 'id': '0G17liCRw1GYfissTAdWlf', 'href': 'https://api.spotify.com/v1/albums/0G17liCRw1GYfissTAdWlf', 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'uri': 'spotify:album:0G17liCRw1GYfissTAdWlf', 'images': [{'url': 'https://i.scdn.co/image/6e810782c6c7a05cc50a4e121affe1bedb39be43', 'height': 640, 'width': 640}, {'url': 'https://i.scdn.co/image/508311289eb6b336f0c3bade308b7e37a7e83345', 'height': 300, 'width': 300}, {'url': 'https://i.scdn.co/image/ef0f9fa1fe3a2d528e35301e62c342ad434a796b', 'height': 64, 'width': 64}], 'name': 'Lost in Smoke', 'external_urls': {'spotify': 'https://open.spotify.com/album/0G17liCRw1GYfissTAdWlf'}, 'album_type': 'album'}, 'id': '5542ZgcaVlugxNYM4E7wRf', 'external_ids': {'isrc': 'USASN1302113'}, 'uri': 'spotify:track:5542ZgcaVlugxNYM4E7wRf', 'preview_url': 'https://p.scdn.co/mp3-preview/185b3eb4fe99711aa541776bf231e75fcfd0efa0', 'artists': [{'type': 'artist', 'id': '6L3x3if9RVimruryD9LoFb', 'href': 'https://api.spotify.com/v1/artists/6L3x3if9RVimruryD9LoFb', 'uri': 'spotify:artist:6L3x3if9RVimruryD9LoFb', 'name': 'King Lil G', 'external_urls': {'spotify': 'https://open.spotify.com/artist/6L3x3if9RVimruryD9LoFb'}}], 'external_urls': {'spotify': 'https://open.spotify.com/track/5542ZgcaVlugxNYM4E7wRf'}}, {'disc_number': 1, 'href': 'https://api.spotify.com/v1/tracks/2YcgCfn4v62JvPvyTqxMxH', 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'duration_ms': 192520, 'popularity': 51, 'name': 'After My Death', 'track_number': 15, 'explicit': True, 'type': 'track', 'album': {'type': 'album', 'id': '4rXtpZpRBrfCWERJEzoCRb', 'href': 'https://api.spotify.com/v1/albums/4rXtpZpRBrfCWERJEzoCRb', 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'uri': 'spotify:album:4rXtpZpRBrfCWERJEzoCRb', 'images': [{'url': 'https://i.scdn.co/image/e0e8425e45e0f33b804becc5001b46b05fe98dd8', 'height': 640, 'width': 640}, {'url': 'https://i.scdn.co/image/d2101a2b13dbcace85fdb14e8da5266f43c1feb4', 'height': 300, 'width': 300}, {'url': 'https://i.scdn.co/image/99b1e90cff3937cd402e860b3f1d31957238a6f4', 'height': 64, 'width': 64}], 'name': 'Lost In Smoke 2', 'external_urls': {'spotify': 'https://open.spotify.com/album/4rXtpZpRBrfCWERJEzoCRb'}, 'album_type': 'album'}, 'id': '2YcgCfn4v62JvPvyTqxMxH', 'external_ids': {'isrc': 'USE7D1600040'}, 'uri': 'spotify:track:2YcgCfn4v62JvPvyTqxMxH', 'preview_url': 'https://p.scdn.co/mp3-preview/e9ed2eb7bcf06b93b61550a204c18e42a1dbd097', 'artists': [{'type': 'artist', 'id': '6L3x3if9RVimruryD9LoFb', 'href': 'https://api.spotify.com/v1/artists/6L3x3if9RVimruryD9LoFb', 'uri': 'spotify:artist:6L3x3if9RVimruryD9LoFb', 'name': 'King Lil G', 'external_urls': {'spotify': 'https://open.spotify.com/artist/6L3x3if9RVimruryD9LoFb'}}], 'external_urls': {'spotify': 'https://open.spotify.com/track/2YcgCfn4v62JvPvyTqxMxH'}}, {'disc_number': 1, 'href': 'https://api.spotify.com/v1/tracks/5cWvvagtENe3lGXS2VK0po', 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'duration_ms': 210000, 'popularity': 50, 'name': 'Windows Down (feat. Drummer Boy)', 'track_number': 4, 'explicit': True, 'type': 'track', 'album': {'type': 'album', 'id': '3XHnTdk5nmiI9BXNXimEBG', 'href': 'https://api.spotify.com/v1/albums/3XHnTdk5nmiI9BXNXimEBG', 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'uri': 'spotify:album:3XHnTdk5nmiI9BXNXimEBG', 'images': [{'url': 'https://i.scdn.co/image/1c0637a5cfab1d2e605f0ec8ff33aa99bbebab38', 'height': 640, 'width': 640}, {'url': 'https://i.scdn.co/image/59914e47f7eea38ebada6ae81909e1bcea4cdd57', 'height': 300, 'width': 300}, {'url': 'https://i.scdn.co/image/0c68daeaeb4e84dbd25d6e4976aaa422e93d238c', 'height': 64, 'width': 64}], 'name': 'Ak47boyz', 'external_urls': {'spotify': 'https://open.spotify.com/album/3XHnTdk5nmiI9BXNXimEBG'}, 'album_type': 'album'}, 'id': '5cWvvagtENe3lGXS2VK0po', 'external_ids': {'isrc': 'USASN1401186'}, 'uri': 'spotify:track:5cWvvagtENe3lGXS2VK0po', 'preview_url': 'https://p.scdn.co/mp3-preview/446eb19f1e1f12ad768a6818b5a86ed35ba322c9', 'artists': [{'type': 'artist', 'id': '6L3x3if9RVimruryD9LoFb', 'href': 'https://api.spotify.com/v1/artists/6L3x3if9RVimruryD9LoFb', 'uri': 'spotify:artist:6L3x3if9RVimruryD9LoFb', 'name': 'King Lil G', 'external_urls': {'spotify': 'https://open.spotify.com/artist/6L3x3if9RVimruryD9LoFb'}}, {'type': 'artist', 'id': '4vE0ADCdH854d1kss98REy', 'href': 'https://api.spotify.com/v1/artists/4vE0ADCdH854d1kss98REy', 'uri': 'spotify:artist:4vE0ADCdH854d1kss98REy', 'name': 'Drummer Boy', 'external_urls': {'spotify': 'https://open.spotify.com/artist/4vE0ADCdH854d1kss98REy'}}], 'external_urls': {'spotify': 'https://open.spotify.com/track/5cWvvagtENe3lGXS2VK0po'}}, {'disc_number': 1, 'href': 'https://api.spotify.com/v1/tracks/4j3LMem6RqLz79Pmb5wPLG', 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'duration_ms': 186425, 'popularity': 50, 'name': 'Room Full Of Smoke', 'track_number': 2, 'explicit': True, 'type': 'track', 'album': {'type': 'album', 'id': '4rXtpZpRBrfCWERJEzoCRb', 'href': 'https://api.spotify.com/v1/albums/4rXtpZpRBrfCWERJEzoCRb', 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'uri': 'spotify:album:4rXtpZpRBrfCWERJEzoCRb', 'images': [{'url': 'https://i.scdn.co/image/e0e8425e45e0f33b804becc5001b46b05fe98dd8', 'height': 640, 'width': 640}, {'url': 'https://i.scdn.co/image/d2101a2b13dbcace85fdb14e8da5266f43c1feb4', 'height': 300, 'width': 300}, {'url': 'https://i.scdn.co/image/99b1e90cff3937cd402e860b3f1d31957238a6f4', 'height': 64, 'width': 64}], 'name': 'Lost In Smoke 2', 'external_urls': {'spotify': 'https://open.spotify.com/album/4rXtpZpRBrfCWERJEzoCRb'}, 'album_type': 'album'}, 'id': '4j3LMem6RqLz79Pmb5wPLG', 'external_ids': {'isrc': 'USE7D1600038'}, 'uri': 'spotify:track:4j3LMem6RqLz79Pmb5wPLG', 'preview_url': 'https://p.scdn.co/mp3-preview/490f1a66d92e062615f3914538b9b3882d0b855f', 'artists': [{'type': 'artist', 'id': '6L3x3if9RVimruryD9LoFb', 'href': 'https://api.spotify.com/v1/artists/6L3x3if9RVimruryD9LoFb', 'uri': 'spotify:artist:6L3x3if9RVimruryD9LoFb', 'name': 'King Lil G', 'external_urls': {'spotify': 'https://open.spotify.com/artist/6L3x3if9RVimruryD9LoFb'}}], 'external_urls': {'spotify': 'https://open.spotify.com/track/4j3LMem6RqLz79Pmb5wPLG'}}, {'disc_number': 1, 'href': 'https://api.spotify.com/v1/tracks/1RXcXkfHRM0mr67t9sNsuT', 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'duration_ms': 248013, 'popularity': 49, 'name': 'Narco Corridos', 'track_number': 3, 'explicit': False, 'type': 'track', 'album': {'type': 'album', 'id': '0HaEvVsikL92OCCWKWn8Pj', 'href': 'https://api.spotify.com/v1/albums/0HaEvVsikL92OCCWKWn8Pj', 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID'], 'uri': 'spotify:album:0HaEvVsikL92OCCWKWn8Pj', 'images': [{'url': 'https://i.scdn.co/image/c309a6ebe37cf1fe226f829d7ecc5cf52ef76b1d', 'height': 640, 'width': 640}, {'url': 'https://i.scdn.co/image/3fcc6688db539ddbb4d36fab4219746059e663e4', 'height': 300, 'width': 300}, {'url': 'https://i.scdn.co/image/74b2759ff7e479d999cbd36fdbeca101333df5f7', 'height': 64, 'width': 64}], 'name': 'King Enemy', 'external_urls': {'spotify': 'https://open.spotify.com/album/0HaEvVsikL92OCCWKWn8Pj'}, 'album_type': 'album'}, 'id': '1RXcXkfHRM0mr67t9sNsuT', 'external_ids': {'isrc': 'USASN1201240'}, 'uri': 'spotify:track:1RXcXkfHRM0mr67t9sNsuT', 'preview_url': 'https://p.scdn.co/mp3-preview/d00b0d0523b89db2f00e5a687a856fbf3d01fd6f', 'artists': [{'type': 'artist', 'id': '6L3x3if9RVimruryD9LoFb', 'href': 'https://api.spotify.com/v1/artists/6L3x3if9RVimruryD9LoFb', 'uri': 'spotify:artist:6L3x3if9RVimruryD9LoFb', 'name': 'King Lil G', 'external_urls': {'spotify': 'https://open.spotify.com/artist/6L3x3if9RVimruryD9LoFb'}}], 'external_urls': {'spotify': 'https://open.spotify.com/track/1RXcXkfHRM0mr67t9sNsuT'}}]\n"
      ]
     }
    ],
@@ -1326,7 +1330,7 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "dict_keys(['limit', 'items', 'href', 'next', 'offset', 'total', 'previous'])\n"
+      "dict_keys(['href', 'items', 'limit', 'next', 'offset', 'total', 'previous'])\n"
      ]
     }
    ],
@@ -1345,7 +1349,7 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "4510\n"
+      "4513\n"
      ]
     }
    ],
@@ -1383,13 +1387,48 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 47,
+   "execution_count": 61,
    "metadata": {
-    "collapsed": true
+    "collapsed": false
    },
-   "outputs": [],
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "It would take 1128.25 to download all the Lils\n"
+     ]
+    }
+   ],
    "source": [
-    "#HELP!"
+    "response = requests.get('https://api.spotify.com/v1/search?q=Lil&type=artist&market=US')\n",
+    "all_lil = response.json()\n",
+    "total_lils= all_lil['artists']['total']\n",
+    "#print(total_lils)\n",
+    "print(\"It would take\",(total_lils/20) * 5, \"to download all the Lils\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 60,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "It would take 12.5 to download all the Lils\n"
+     ]
+    }
+   ],
+   "source": [
+    "response = requests.get('https://api.spotify.com/v1/search?q=Biggie&type=artist&market=US')\n",
+    "all_biggies = response.json()\n",
+    "total_biggies= all_biggies['artists']['total']\n",
+    "#print(total_biggies)\n",
+    "print(\"It would take\",(total_biggies/20) * 5, \"to download all the Lils\")"
    ]
   },
   {
@@ -1401,7 +1440,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 48,
+   "execution_count": 68,
    "metadata": {
     "collapsed": false
    },
@@ -1410,7 +1449,7 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "dict_keys(['limit', 'items', 'href', 'next', 'offset', 'total', 'previous'])\n"
+      "dict_keys(['href', 'items', 'limit', 'next', 'offset', 'total', 'previous'])\n"
      ]
     }
    ],
@@ -1422,7 +1461,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 49,
+   "execution_count": 69,
    "metadata": {
     "collapsed": false
    },
@@ -1431,7 +1470,7 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "{'type': 'artist', 'id': '5me0Irg2ANcsgc93uaYrpb', 'uri': 'spotify:artist:5me0Irg2ANcsgc93uaYrpb', 'href': 'https://api.spotify.com/v1/artists/5me0Irg2ANcsgc93uaYrpb', 'genres': ['gangster rap', 'hardcore hip hop', 'hip hop', 'rap'], 'name': 'The Notorious B.I.G.', 'external_urls': {'spotify': 'https://open.spotify.com/artist/5me0Irg2ANcsgc93uaYrpb'}, 'followers': {'total': 974573, 'href': None}, 'popularity': 76, 'images': [{'url': 'https://i.scdn.co/image/3d44c609f22910dcd82cfd3311ed1e41bd37ca8f', 'width': 1000, 'height': 1250}, {'url': 'https://i.scdn.co/image/65d46631b7853a2c396558ff4569bb22b486bba3', 'width': 640, 'height': 800}, {'url': 'https://i.scdn.co/image/c84fa657bfda54a366cc3284ac38f8e0e7bbcc2b', 'width': 200, 'height': 250}, {'url': 'https://i.scdn.co/image/826db6d87e55e431df5cdf937a54fd224a65ff8f', 'width': 64, 'height': 80}]}\n"
+      "{'type': 'artist', 'id': '5me0Irg2ANcsgc93uaYrpb', 'href': 'https://api.spotify.com/v1/artists/5me0Irg2ANcsgc93uaYrpb', 'genres': ['gangster rap', 'hardcore hip hop', 'hip hop', 'rap'], 'popularity': 76, 'uri': 'spotify:artist:5me0Irg2ANcsgc93uaYrpb', 'followers': {'href': None, 'total': 975494}, 'images': [{'url': 'https://i.scdn.co/image/3d44c609f22910dcd82cfd3311ed1e41bd37ca8f', 'height': 1250, 'width': 1000}, {'url': 'https://i.scdn.co/image/65d46631b7853a2c396558ff4569bb22b486bba3', 'height': 800, 'width': 640}, {'url': 'https://i.scdn.co/image/c84fa657bfda54a366cc3284ac38f8e0e7bbcc2b', 'height': 250, 'width': 200}, {'url': 'https://i.scdn.co/image/826db6d87e55e431df5cdf937a54fd224a65ff8f', 'height': 80, 'width': 64}], 'name': 'The Notorious B.I.G.', 'external_urls': {'spotify': 'https://open.spotify.com/artist/5me0Irg2ANcsgc93uaYrpb'}}\n"
      ]
     }
    ],
@@ -1441,7 +1480,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 50,
+   "execution_count": 70,
    "metadata": {
     "collapsed": false
    },
@@ -1467,7 +1506,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 51,
+   "execution_count": 63,
    "metadata": {
     "collapsed": true
    },
@@ -1480,7 +1519,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 52,
+   "execution_count": 67,
    "metadata": {
     "collapsed": false
    },
@@ -1513,7 +1552,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 59,
+   "execution_count": null,
    "metadata": {
     "collapsed": true
    },
@@ -1522,6 +1561,15 @@
     "#This is the link to my graphic of the various popularities.\n",
     "#https://infogr.am/fd7c85b9-f59b-498d-829d-a6ead4fb6862\n"
    ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": []
   },
   {
    "cell_type": "code",
