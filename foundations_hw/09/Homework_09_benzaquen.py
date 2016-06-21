@@ -6,29 +6,29 @@
 get_ipython().system('pip install pandas ')
 
 
-# In[2]:
+# In[6]:
 
 import pandas as pd
 
 
-# In[14]:
+# In[7]:
 
 df = pd.read_csv("http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/1.0_month.csv")
 df.head()
 
 
-# In[15]:
+# In[8]:
 
 earthquakes_df = pd.read_csv("http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/1.0_month.csv")
 earthquakes = earthquakes_df.to_dict('records')
 
 
-# In[16]:
+# In[9]:
 
 earthquakes
 
 
-# In[17]:
+# In[10]:
 
 
 earthquake = earthquakes[0]
@@ -39,7 +39,7 @@ earthquake = earthquakes[0]
 
 # # variable for depth
 
-# In[18]:
+# In[12]:
 
 def depth_to_words(earth_dict):
     depth = earth_dict['depth']
@@ -61,7 +61,7 @@ depth_to_words(earthquake)
 
 # # variable for magnitude
 
-# In[19]:
+# In[13]:
 
 def magnitude_to_words(earth_dict):
     magnitude = earth_dict['mag']
@@ -88,7 +88,7 @@ magnitude_to_words(earthquake)
 
 # # variable for day in words
 
-# In[20]:
+# In[14]:
 
 import dateutil.parser
 
@@ -107,7 +107,7 @@ day_in_words(earthquake)
 # 
 # 
 
-# In[21]:
+# In[15]:
 
 def time_in_words(earth_dict):
     time = earthquake['time']
@@ -128,12 +128,12 @@ def time_in_words(earth_dict):
 time_in_words(earthquake)  
 
 
-# In[22]:
+# In[16]:
 
 python_time = dateutil.parser.parse('2016-06-14T23:57:34.000Z')
 
 
-# In[23]:
+# In[17]:
 
 python_time.hour
 
@@ -142,7 +142,7 @@ python_time.hour
 # 
 # 
 
-# In[24]:
+# In[23]:
 
 #variable for date in words
 
@@ -157,17 +157,18 @@ date_in_words(earthquake)
 
 # # eq_to_sentence function
 
-# In[25]:
+# In[29]:
 
 def eq_to_sentence(earth_dict):
     depth = depth_to_words(earth_dict)
     mag = magnitude_to_words(earth_dict)
+    mag_number = earth_dict['mag']
     day= day_in_words(earth_dict)
     daytime= time_in_words(earth_dict)
     date= date_in_words(earth_dict)  
     place = earth_dict['place'] 
        
-    return("A" + " " +  depth + " " + mag + " " + "earthquake was reported" + " " +day + " " + daytime + " " + "on" + " " + date + " " +place)
+    return("A" + " " +  depth + " " + mag + " " + str(mag_number) + " " + "magnitude earthquake was reported" + " " +day + " " + daytime + " " + "on" + " " + date + " " +place)
 
 print(eq_to_sentence(earthquake))
 
@@ -211,6 +212,11 @@ for item in earthquakes:
         print(not_eq_to_sentence(item))
         
 #There was also a magnitude MAGNITUDE TYPE_OF_EVENT on DATE LOCATION.
+
+
+# In[ ]:
+
+
 
 
 # In[ ]:
